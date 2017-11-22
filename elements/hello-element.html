@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<dom-module id="hello-element">
+  <style>
+  /* CSS rules for your element */
+  .bordred {
+    border: solid;
+    border-width: 1px;
+    padding: 0 5px 5px 5px;
+    border-color: green;
+  }
+  h3, input, button {
+    color: green;
+  }
+  </style>
+  <template>
+    <div class="bordred">
+      <h3>Simple Polymer1 element</h3>
+      <input type="text" name="user" value="{{user::change}}" placeholder="Type your name here">
+      <button on-click="sayHello">Say Hello</button>
+    </div>
+  </template>
+</dom-module>
+<script>
+Polymer({
+  is: "hello-element",
+  properties: {
+    // declare properties for the element's public API
+    user: {
+      type: String,
+      value: ""
+    }
+  },
+  sayHello: function(){
+    alert('Hello '+ this.user);
+  },
+});
+</script>
+</html>

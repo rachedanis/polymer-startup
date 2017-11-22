@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../elements/hello-element.html" rel="import">
+</head>
+<dom-module id="hello-app">
+  <style>
+  .bordred {
+    border: solid;
+    border-width: 2px;
+    border-color: red;
+    padding: 5px;
+  }
+  h1 {
+    color: red;
+  }
+  </style>
+  <template>
+    <div class="bordred">
+      <h1>Simple Polymer1 Hello App !</h1>
+      <hello-element></hello-element>
+    </div>
+  </template>
+</dom-module>
+<script>
+Polymer({
+  is: "hello-app"
+});
+</script>
+</html>

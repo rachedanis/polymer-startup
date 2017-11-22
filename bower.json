@@ -1,0 +1,20 @@
+{
+  "name": "polymer-startup",
+  "authors": [
+    "Anis RACHED <rachedanis94@gmail.com>"
+  ],
+  "description": "Polymer startup project",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.0.0"
+  }
+}
